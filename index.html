@@ -1,55 +1,44 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
   <head>
-    <title>My Form</title>
-    <style>
-      /* Add CSS gradient as background color */
-      body {
-        background: linear-gradient(to right, #f1f1f1, #333333);
-      }
-      /* Make form responsive */
-      form {
-        background: #fff;
-        display: flex;
-        flex-direction: column;
-        padding: 2vw 4vw;
-        width: 90%;
-        max-width: 600px;
-        border-radius: 10px;
-        margin: 0 auto;
-      }
-
-      form input {
-        border: 0;
-        margin: 10px 0;
-        padding: 20px;
-        outline: none;
-        background: #f5f5f5;
-        font-size: 16px;
-        box-sizing: border-box;
-        border-radius: 4px;
-      }
-
-      form button {
-        padding: 15px;
-        background: green;
-        color: #fff;
-        font-size: 18px;
-        border: 0;
-        outline: none;
-        cursor: pointer;
-        width: 150px;
-        margin: 20px auto 0;
-        border-radius: 30px;
-      }
-    </style>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
   </head>
   <body>
-    <form>
-      <input type="text" id="name" placeholder="Your Name" required />
-      <input type="email" id="email" placeholder="Email id" required />
-      <input type="text" id="phone" placeholder="Phone Number" required />
-      <button type="submit">Submit</button>
-    </form>
+    <div class="topnav">
+      <a class="active" href="#home">Home</a>
+      <a href="projects.html">Projects</a>
+      <a href="contact.html">Contact</a>
+      <a href="about.html">About</a>
+    </div>
+
+    <div class="flex-container">
+      <div class="myPhoto">
+        <img class="photo" src="myPhoto.JPG" alt="Picture" />
+      </div>
+
+      <div class="main">
+        <div class="animated-text">"Hello world!"</div>
+        <p>
+          I am Ruja! <br />I am a fresh Computer Engineering Graduate.<br />
+        </p>
+      </div>
+
+      <!-- <div class="snow-flakes">
+            <img class="img-2" src="gradient.png" alt="snow-flake" width="75" height="75">
+            <img class="img-2" src="gradient.png" alt="snow-flake" width="30" height="30">
+            <br>
+            <img class="img-2" src="gradient.png" alt="snow-flake" width="50" height="50">
+            <img class="img-2" src="gradient.png" alt="snow-flake" width="85" height="85">
+            
+        </div>    -->
+    </div>
   </body>
 </html>
