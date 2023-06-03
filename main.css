@@ -1,0 +1,336 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap");
+
+body {
+  background-color: #cccccc;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body:hover {
+  animation-name: example;
+  animation-duration: 8s;
+}
+
+.flex-container {
+  display: flex;
+}
+
+.snow-flakes {
+  width: 45%;
+  float: right;
+}
+
+.myPhoto {
+  width: 35%;
+  float: left;
+}
+
+.main {
+  padding-top: 10%;
+  font-size: 20px;
+}
+
+.main .animated-text {
+  color: rgb(54, 28, 50);
+  font-size: 40px;
+  font-weight: 400;
+  animation: type 10s steps(14) infinite;
+  overflow: hidden;
+  white-space: nowrap;
+  font-family: "Poppins", sans-serif;
+}
+
+.photo {
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  animation: shake 7s;
+  animation-iteration-count: infinite;
+}
+
+.img-1 {
+  animation: shakee 10s;
+  animation-iteration-count: infinite;
+}
+
+.img-2 {
+  border-radius: 50%;
+  animation: shakee 40s;
+  animation-iteration-count: infinite;
+}
+
+@keyframes shake {
+  0% {
+    transform: translate(100px, 120px) rotate(0deg);
+  }
+
+  50% {
+    transform: translate(100px, 150px) rotate(0deg);
+  }
+
+  100% {
+    transform: translate(100px, 120px) rotate(0deg);
+  }
+}
+
+@keyframes shakee {
+  0% {
+    transform: translate(10px, 100px) rotate(0deg);
+  }
+  25% {
+    transform: translate(100px, 200px) rotate(45deg);
+  }
+
+  50% {
+    transform: translate(200px, 100px) rotate(45deg);
+  }
+
+  75% {
+    transform: translate(100px, 200px) rotate(45deg);
+  }
+
+  100% {
+    transform: translate(10px, 100px) rotate(0deg);
+  }
+}
+
+@keyframes type {
+  0% {
+    width: 0ch;
+  }
+  5% {
+    width: 1ch;
+  }
+  10% {
+    width: 2ch;
+  }
+  15% {
+    width: 3ch;
+  }
+  20% {
+    width: 4ch;
+  }
+  25% {
+    width: 6ch;
+  }
+  30% {
+    width: 7ch;
+  }
+  35% {
+    width: 9ch;
+  }
+  40% {
+    width: 10ch;
+  }
+  45% {
+    width: 12ch;
+  }
+  50% {
+    width: 14ch;
+  }
+  55% {
+    width: 12ch;
+  }
+  60% {
+    width: 10ch;
+  }
+  65% {
+    width: 9ch;
+  }
+  70% {
+    width: 7ch;
+  }
+  75% {
+    width: 6ch;
+  }
+  80% {
+    width: 4ch;
+  }
+  85% {
+    width: 3ch;
+  }
+  90% {
+    width: 2ch;
+  }
+  95% {
+    width: 1ch;
+  }
+  100% {
+    width: 0ch;
+  }
+}
+
+@keyframes example {
+  from {
+    background-color: #cccccc;
+  }
+  to {
+    background-color: #c9bdbd;
+  }
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: #333;
+}
+
+.topnav a {
+  float: left;
+  color: #f2f2f2;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 20px;
+}
+
+.topnav a:hover {
+  background-color: #04aa6d;
+  color: black;
+}
+
+.topnav a.active {
+  background-color: #046642;
+  color: white;
+}
+
+.icon-bar {
+  background-color: #333;
+}
+
+.icon-bar a {
+  display: block;
+  text-align: center;
+  padding: 20px;
+  transition: all 0.3s ease;
+  color: white;
+  font-size: 36px;
+}
+
+.icon-bar a:hover {
+  background-color: #04aa6d;
+}
+
+.article {
+  text-align: center;
+}
+
+.container {
+  position: relative;
+  width: 80%;
+  display: flex;
+  align-items: center;
+  margin-top: 15px;
+  padding-left: 5%;
+}
+
+.container .contactInfo {
+  padding-left: 5%;
+  display: flex;
+  flex-direction: column;
+}
+
+.container .contactInfo .box {
+  position: relative;
+  padding: 20px 0px;
+  display: flex;
+}
+
+.container .contactInfo .box .icon {
+  min-width: 60px;
+  height: 60px;
+  background: rgb(190, 184, 184);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  font-size: 22px;
+}
+
+.container .contactInfo .box .text {
+  display: flex;
+  margin-left: 20px;
+  font-size: 15px;
+  color: #333;
+  flex-direction: column;
+  font-weight: 300;
+}
+
+.container .contactInfo .box .text h3 {
+  font-weight: 500;
+}
+
+.contactForm {
+  padding-left: 40px;
+  padding-top: 0px;
+  justify-content: left;
+  align-self: left;
+  display: flex;
+}
+
+.contactForm h2 {
+  font-size: 30px;
+  font-weight: 500;
+}
+
+.contactForm .inputBox {
+  position: relative;
+  width: 100%;
+  margin-top: 10px;
+}
+
+.contactForm .inputBox input,
+.contactForm .inputBox textarea {
+  width: 100%;
+  padding: 5px 0px;
+  font-size: 16px;
+  margin: 10px 0;
+  border: 2px solid #c9bdbd;
+  background-color: #e6dddd;
+  border-bottom: 2px solid #333;
+  outline: none;
+  resize: none;
+}
+
+.contactForm .inputBox input:hover {
+  border: 2px solid #c9bdbd;
+  background-color: darkgray;
+  border-top: 2px solid #333;
+}
+
+.contactForm .inputBox span {
+  position: absolute;
+}
+
+.aboutMePhoto {
+  width: 30%;
+  height: 30%;
+  border-radius: 10%;
+}
+
+#customers {
+  font-family: Arial, Helvetica, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td,
+#customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even) {
+  background-color: #f2f2f2;
+}
+
+#customers tr:hover {
+  background-color: #ddd;
+}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: left;
+  background-color: #04aa6d;
+  color: white;
+}
